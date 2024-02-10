@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random quotes</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="lightbox" class="">
+      <div id="editor">
+        <div class="form-container">
+          <form>
+            <input type="text" id="new-quote-text" placeholder="Cytat" />
+            <input type="text" id="new-quote-author" placeholder="Autor" />
+            <button id="add-new-quote">Dodaj cytat</button>
+          </form>
+        </div>
+        <h2>Lista cytatów</h2>
+        <ul class="quotes-list">
+          <!-- 
+          <li class="list-item">
+            <div class="quote-list-item">Autor1: Cytat ...</div>
+            <div class="quote-list-item-delete">
+              <a href="#" quote-id="ssd3d23r2">X</a>
+            </div>
+          </li>
+          <li class="list-item">
+            <div class="quote-list-item">Autor2: Cytat ...</div>
+            <div class="quote-list-item-delete">
+              <a href="#" quote-id="ssd3d23r2">X</a>
+            </div>
+          </li>
+          <li class="list-item">
+            <div class="quote-list-item">Autor3: Cytat ...</div>
+            <div class="quote-list-item-delete">
+              <a href="#" quote-id="ssd3d23r2">X</a>
+            </div>
+          </li>
+          -->
+        </ul>
+        <button id="hide-editor">Zamknij edytor</button>
+      </div>
+    </div>
+    <div id="quote-container" class="quote-container">
+      <div class="quote-text">
+        <span id="quote"></span>
+      </div>
+      <div class="quote-author">
+        <span id="author"></span>
+      </div>
+      <div class="button-container">
+        <button id="next-quote">Kolejny cytat</button>
+        <button id="show-editor">Edytor cytatów</button>
+      </div>
+    </div>
+    <script src="app.js"></script>
+    <script src="editor.js"></script>
+  </body>
+</html>
