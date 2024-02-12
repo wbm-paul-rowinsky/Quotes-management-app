@@ -1,3 +1,4 @@
+import RandomBg from "./body-bg.js";
 class RandomQuote {
   constructor() {
     this.init();
@@ -8,10 +9,13 @@ class RandomQuote {
     this.quote = document.querySelector("#quote");
     this.quoteBtn = document.querySelector("#next-quote");
     this.author = document.querySelector("#author");
-
+    let Random = new RandomBg();
     this.quoteBtn.addEventListener("click", this.getQuote);
     document.addEventListener("keyup", (e) => {
-      if (e.code === "Space") this.getQuote();
+      if (e.code === "Space") {
+        this.getQuote();
+        Random.setRandomColor();
+      }
     });
 
     this.getQuote();

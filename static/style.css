@@ -15,6 +15,7 @@ body {
   font-family: sans-serif;
   font-weight: bold;
   text-align: center;
+  transition: background-color 1s;
 }
 
 .quote-container {
